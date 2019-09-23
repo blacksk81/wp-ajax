@@ -1,17 +1,17 @@
 
 	// after switch activa el hook al activar el tema
-	add_action('after_switch_theme', 'bbva_feed_back_datebase');
+	add_action('after_switch_theme', 'feed_back_datebase');
 
-	function bbva_feed_back_datebase(){
+	function feed_back_datebase(){
 
 		//variable global
 		global $wpdb;
 
 		//buscar en functions define
-		$table_feed = BBVA_SITE_RATING_TABLE_FEED;
+		$table_feed = SITE_RATING_TABLE_FEED;
 
 		// se agrega en ajax.php como get_option 1.1
-		update_option('bbva_theme_table_feed', $tabla_feed);
+		update_option('theme_table_feed', $tabla_feed);
 
 		//crea la tabla con sus campos
 		$charset_collate = $wpdb->get_charset_collate();
