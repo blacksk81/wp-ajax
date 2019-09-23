@@ -1,7 +1,7 @@
-	// define el nombre que se crea la tabla de la base de datos
-  define('BBVA_SITE_RATING_TABLE_FEED', $wpdb->prefix.'feed_back');
+// define el nombre que se crea la tabla de la base de datos
+  define('SITE_RATING_TABLE_FEED', $wpdb->prefix.'feed_back');
   
-  // bbva_theme_feedback_form viene del action del script.php 
+  // heme_feedback_form viene del action del script.php 
 	// wp_ajax_norpiv = publico
 	// wp_ajax_ = priva
 	add_action( 'wp_ajax_nopriv_theme_feedback_form', 'ajax_feedback' );
