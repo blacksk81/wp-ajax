@@ -10,7 +10,7 @@
 	function ajax_feedback ()
 	{
 
-		//Si no es local
+		//Si no es local klskdkdkdkdk
 		if ( ( $_SERVER['SERVER_ADDR'] != '127.0.0.1' ) && ( $_SERVER['SERVER_ADDR'] != '::1' ) ) {
 			session_start();//Al ser bbvaGP es necesario para que funcione correctamente
 		}
