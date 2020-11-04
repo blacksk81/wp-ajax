@@ -32,3 +32,6 @@
 		wp_send_json($succeses);
 
 	}
+
+
+	//modificacion hitorial 1830
