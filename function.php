@@ -2,15 +2,12 @@
   define('SITE_RATING_TABLE_FEED', $wpdb->prefix.'feed_back');
   
   // heme_feedback_form viene del action del script.php 
-	// wp_ajax_norpiv = publico
-	// wp_ajax_ = priva
 	add_action( 'wp_ajax_nopriv_theme_feedback_form', 'ajax_feedback' );
 	add_action( 'wp_ajax_theme_feedback_form', 'ajax_feedback' );
 
 	function ajax_feedback ()
 	{
-
-		//Si no es local klskdkdkdkdk dsfsef
+		//Si no es local 
 		if ( ( $_SERVER['SERVER_ADDR'] != '127.0.0.1' ) && ( $_SERVER['SERVER_ADDR'] != '::1' ) ) {
 			session_start();//Al ser bbvaGP es necesario para que funcione correctamente
 		}
